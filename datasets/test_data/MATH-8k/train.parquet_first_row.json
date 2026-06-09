@@ -1,0 +1,18 @@
+{
+  "data_source": "MATH-8k",
+  "prompt": [
+    {
+      "content": "How many vertical asymptotes does the graph of $y=\\frac{2}{x^2+x-6}$ have? Please reason step by step, and put your final answer within \\boxed{}.",
+      "role": "user"
+    }
+  ],
+  "ability": "math",
+  "reward_model": {
+    "ground_truth": "2",
+    "style": "rule"
+  },
+  "extra_info": {
+    "index": "MATH-8k-0",
+    "split": "train"
+  }
+}

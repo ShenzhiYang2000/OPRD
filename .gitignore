@@ -118,8 +118,8 @@ ENV/
 *.lock
 
 # data
-*.parquet
-datasets
+#*.parquet
+#datasets
 
 
 # local logs

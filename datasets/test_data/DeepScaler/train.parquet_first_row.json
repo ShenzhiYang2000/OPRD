@@ -1,0 +1,18 @@
+{
+  "data_source": "DeepScaler",
+  "prompt": [
+    {
+      "content": "The operation $\\otimes$ is defined for all nonzero numbers by $a \\otimes b = \\frac{a^{2}}{b}$. Determine $[(1 \\otimes 2) \\otimes 3] - [1 \\otimes (2 \\otimes 3)]$. Please reason step by step, and put your final answer within \\boxed{}.",
+      "role": "user"
+    }
+  ],
+  "ability": "math",
+  "reward_model": {
+    "ground_truth": "-\\frac{2}{3}",
+    "style": "rule"
+  },
+  "extra_info": {
+    "index": "DeepScaler-0",
+    "split": "train"
+  }
+}

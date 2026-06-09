@@ -1,0 +1,18 @@
+{
+  "data_source": "DAPO",
+  "prompt": [
+    {
+      "content": "In the diagram, what is the value of $x?$ [asy]\ndraw(Arc((0,0),1,-120,42));\n\ndraw((-2,-2*sqrt(3))--(3,3*sqrt(3))--(3,-2*sqrt(3))--(-2*sqrt(3)/.9,-2*sqrt(3))--(3,2.7));\ndraw((2.7,-2*sqrt(3))--(2.7,-2*sqrt(3)+.3)--(3,-2*sqrt(3)+.3));\nlabel(\"$48^\\circ$\",(3,1.5),W);\nlabel(\"$60^\\circ$\",(-1.2,-2*sqrt(3)),N);\nlabel(\"$x^\\circ$\",(1,-1));\n[/asy] Please reason step by step, and put your final answer within \\boxed{}.",
+      "role": "user"
+    }
+  ],
+  "ability": "math",
+  "reward_model": {
+    "ground_truth": "162",
+    "style": "rule"
+  },
+  "extra_info": {
+    "index": "DAPO-0",
+    "split": "train"
+  }
+}

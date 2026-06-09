@@ -1,0 +1,18 @@
+{
+  "data_source": "GPQA",
+  "prompt": [
+    {
+      "content": "Among the following exoplanets, which one has the highest density?\n\na) An Earth-mass and Earth-radius planet.\nb) A planet with 2 Earth masses and a density of approximately 5.5 g/cm^3.\nc) A planet with the same composition as Earth but 5 times more massive than Earth.\nd) A planet with the same composition as Earth but half the mass of Earth.\n\nA. d\nB. a\nC. b\nD. c Please reason step by step, and put your final answer within \\boxed{}.",
+      "role": "user"
+    }
+  ],
+  "ability": "math",
+  "reward_model": {
+    "ground_truth": "D",
+    "style": "rule"
+  },
+  "extra_info": {
+    "index": "GPQA-0",
+    "split": "test"
+  }
+}

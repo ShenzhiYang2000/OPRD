@@ -1,0 +1,18 @@
+{
+  "data_source": "MMLU-Pro",
+  "prompt": [
+    {
+      "content": "Typical advertising regulatory bodies suggest, for example that adverts must not: encourage _________, cause unnecessary ________ or _____, and must not cause _______ offence.\nAnswer Choices: (A) Safe practices, Fear, Jealousy, Trivial (B) Unsafe practices, Distress, Joy, Trivial (C) Safe practices, Wants, Jealousy, Trivial (D) Safe practices, Distress, Fear, Trivial (E) Unsafe practices, Wants, Jealousy, Serious (F) Safe practices, Distress, Jealousy, Serious (G) Safe practices, Wants, Fear, Serious (H) Unsafe practices, Wants, Fear, Trivial (I) Unsafe practices, Distress, Fear, Serious Please reason step by step, and put your final answer within \\boxed{}.",
+      "role": "user"
+    }
+  ],
+  "ability": "math",
+  "reward_model": {
+    "ground_truth": "I",
+    "style": "rule"
+  },
+  "extra_info": {
+    "index": "MMLU-Pro-0",
+    "split": "test"
+  }
+}
