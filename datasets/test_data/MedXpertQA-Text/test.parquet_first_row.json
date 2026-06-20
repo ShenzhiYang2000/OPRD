@@ -1,0 +1,18 @@
+{
+  "data_source": "MedXpertQA-Text",
+  "prompt": [
+    {
+      "content": "Which patient scenario represents the most appropriate indication for eccentric anterior glenoid reaming during shoulder surgery?\nAnswer Choices: (A) 70-year-old male with glenoid retroversion of 18-degrees undergoing shoulder arthroplasty (B) 70-year-old female with humeral anteversion of 13-degrees undergoing shoulder arthroplasty (C) 63-year-old female with glenoid retroversion of 22-degrees and mild posterior wear undergoing shoulder arthroplasty (D) 65-year-old female with glenoid retroversion of 25-degrees undergoing shoulder arthroplasty (E) 65-year-old female with a glenoid retroversion of 13-degrees undergoing shoulder arthroplasty (F) 68-year-old female with glenoid retroversion of 20-degrees undergoing reverse shoulder arthroplasty (G) 72-year-old male with glenoid retroversion of 15-degrees undergoing shoulder arthroplasty (H) 65-year-old female with glenoid retroversion of 30-degrees and severe posterior wear undergoing shoulder arthroplasty (I) 58-year-old male with glenoid retroversion of 12-degrees undergoing shoulder arthroplasty (J) 55-year-old male with glenoid retroversion of 8-degrees undergoing total shoulder arthroplasty Please reason step by step, and put your final answer within \\boxed{}.",
+      "role": "user"
+    }
+  ],
+  "ability": "math",
+  "reward_model": {
+    "ground_truth": "E",
+    "style": "rule"
+  },
+  "extra_info": {
+    "index": "MedXpertQA-Text-0",
+    "split": "test"
+  }
+}
