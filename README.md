@@ -6,7 +6,7 @@
 
 ## 🔔 News
 
-- **[2026/06]** 🆕 New version of our paper  is now available in the [`paper/`](paper/) folder!
+- **[2026/06]** New version of our paper  is now available in the [`paper/`](paper/) folder!
 - **[2026/06]** We now support **cross-architecture** and **cross-tokenizer** distillation via OPRD-Bridge (e.g., Phi-4-mini-reasoning -> Qwen3-1.7B with completely different tokenizers).
 - **[2026/06]** Paper released: [OPRD: On-Policy Representation Distillation](https://arxiv.org/abs/2606.06021).
 
