@@ -2900,7 +2900,7 @@ class RewardModelWorker(Worker, DistProfilerExtension):
 
             teacher_last_hidden_repr = None
             if len(output_teacher_last_hidden_repr) > 0:
-                repr_shapes = [t.shape for t in output_teacher_last_hidden_repr]
+                repr_shapes = [tuple(t.shape[1:]) for t in output_teacher_last_hidden_repr]
                 if len(set(repr_shapes)) > 1:
                     raise RuntimeError(
                         "Inconsistent teacher_last_hidden_repr shapes across micro-batches "
@@ -2910,7 +2910,7 @@ class RewardModelWorker(Worker, DistProfilerExtension):
 
             teacher_attn_rows = None
             if len(output_teacher_attn_rows) > 0:
-                attn_shapes = [t.shape for t in output_teacher_attn_rows]
+                attn_shapes = [tuple(t.shape[1:]) for t in output_teacher_attn_rows]
                 if len(set(attn_shapes)) > 1:
                     raise RuntimeError(
                         "Inconsistent teacher_attn_rows shapes across micro-batches: "
