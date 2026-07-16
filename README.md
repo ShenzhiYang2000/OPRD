@@ -28,8 +28,8 @@
 
 This repository implements two variants:
 
-- **OPRD-Vanilla**: Same-architecture distillation (e.g., Qwen3-4B -> Qwen3-1.7B). Aligns hidden states directly via proportional layer mapping.
-- **OPRD-Bridge**: Cross-architecture and cross-tokenizer distillation (e.g., Phi-4-mini-reasoning -> Qwen3-1.7B). Constructs a frozen low-rank bridge between heterogeneous teacher and student representation spaces via PCA + learned projectors.
+- **OPRD-Vanilla**: Same-architecture distillation. Aligns hidden states directly.
+- **OPRD-Bridge**: Cross-architecture and cross-tokenizer distillation (e.g., Qwen3-4B -> Qwen3-1.7B-Base, Phi-4-mini-reasoning -> Qwen3-1.7B-Base). Constructs a frozen low-rank bridge between heterogeneous teacher and student representation spaces via PCA + learned projectors.
 
 Compared to top-*k* token OPD on long chain-of-thought responses, OPRD:
 
