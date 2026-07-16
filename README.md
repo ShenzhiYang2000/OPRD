@@ -48,6 +48,9 @@ Compared to top-*k* token OPD on long chain-of-thought responses, OPRD:
 2. **Teacher cache**: The teacher runs a forward pass; per-layer hidden states on the response region are stored.
 3. **Student update**: The student forward produces matching hidden states; the loss is **MSE** between student and teacher representations.
 
+**!NOTE:** If you wish to reproduce the experimental results of OPRD-Vanilla (same architecture) from the paper using the **exact same parameters**, please use the code in the `Main` branch; **OR**, modify the `normalized_mse_loss` function (lines 340–361) in `/verl/verl/utils/rep_distillation.py` — **change the normalization operation** on student/teacher representations to **no normalization**. Otherwise, the computed MSE will be extremely small. If you choose not to modify it, you will need to **significantly increase the coefficient** from `1` to something like `100` or `1000`.
+
+
 Key knobs (see `rep_distillation.sh`):
 
 | Concept             | Env vars                                  | Options                                             |
